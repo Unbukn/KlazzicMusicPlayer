@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Klazzic The_Vet - Offical Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/AudioPlayer.css">
+    <style>
+#player{
+  font-family: 'Economica', sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  background-image: linear-gradient(rgba(0, 132, 255, 0.486), rgba(41, 189, 176, 0.445));
+}
+    </style>
+  </head>
+
+  <body>
+      <!-- Audio player container-->
+<div class="" id="player">
+  <h1>Klazzic The_Vet</h1>   
+  <div class="hero-image">
+        <div class="hero-text col-md-12">
+          <div style="color: white;">
+          <h2>I'm a professional musician, mix engineer, and producer</h2>
+          <h3>Check out my music and let me know what you think.</h3>
+          <h4>I'm a believer that music is the only drug that won't kill you. Music is the extra push you need to overcome a challenge. Music is what helps you set a new personal record out on the field. Music is the story of one, and can act as message for another. I've worked, and will continue to work extremely hard to develop skills as a musician, and performer. My goal is to touch fans around the world with enjoyable music.</h4>
+        </div>
+      </div>
+      </div>  
+    <!-- Audio player js begin-->
+    <script src="js/AudioPlayer.js"></script>
+
+    <script>
+        // test image for web notifications
+        var iconImage = null;
+
+        AP.init({
+            container:'#player',//a string containing one CSS selector
+            volume   : 0.7,
+            autoPlay : true,
+            notification: false,
+            playList: [   
+                {'icon': iconImage, 'title': 'Cop Out', 'file': 'https://www.dropbox.com/s/9o4bl6cjuoiq1w8/Cop_Out-Klazzic_%28Prod_By._zane98%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Hold of Me', 'file': 'https://www.dropbox.com/s/gi39yvqabholmq6/Hold%20of%20Me%20-%20%28Prod.%20by%20Syndrome%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Manifested', 'file': 'https://www.dropbox.com/s/wrbvmftdan56tk1/Manifested%20-%20Klazzic%20%28prod.%20by%20Bravo%20Beats.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Blackout', 'file': 'https://www.dropbox.com/s/y4p8aukbyth8uiv/Blackout%20-%20Klazzic%20%28Mixed%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Backpage', 'file': 'https://www.dropbox.com/s/7ayhutq8vxn3pvo/Backpage.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'IDK', 'file': 'https://www.dropbox.com/s/mk55cd034wzwn9z/IDK%20-%20%28Prod.%20by%20LCS%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Same Page', 'file': 'https://www.dropbox.com/s/w8g9vtyot9pdit7/Same%20Page%20-%20Klzzic%20ft.%20Mikey%20Diamond-Smith.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Our Time', 'file': 'https://www.dropbox.com/s/llkauy4oib5rs7t/Our%20Time%20-%20Klazzic%20%28Prod.%20by%20Syndrome%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'All On Me', 'file': 'https://www.dropbox.com/s/8kls1l578iciejk/Klazzic%20-%20All%20On%20Me.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Circus', 'file': 'https://www.dropbox.com/s/rd6rzgpfkcdvfy5/Circus%20-%20Klazzic.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Do That', 'file': 'https://www.dropbox.com/s/z5d7f1c41r73ggs/Do%20That%20RS.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Legends', 'file': 'https://www.dropbox.com/s/ukwwdutunltwqam/Legend%20-%20Klazzic%20%28Prod%20By.%20Roman%20RSK%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': '8==D', 'file': 'https://www.dropbox.com/s/ser1niqh23tuayk/8%3D%3DD%20-%20Confetti%20Murphy%20X%20Klazzic%20%28Prod.%20By%20Dos%20Vatos%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Progeny', 'file': 'https://www.dropbox.com/s/ysp53ivcw9s07ac/Progeny%20-%20Klazzic%20%28Prod.%20by%20Penacho%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Give Up', 'file': 'https://www.dropbox.com/s/f5qd1nmc122v7o4/Klazzic%20-%20Give%20Up.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Same Old', 'file': 'https://www.dropbox.com/s/masmnb5970zqe78/Nileak%20feat.%20Klazzic%20-%20Same%20Old.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Today', 'file': 'https://www.dropbox.com/s/31002h2yhsb9mtc/Klazzic-%20Get%20It.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Problems', 'file': 'https://www.dropbox.com/s/cv57sjwih5ycasi/Klazzic%20feat.%20Pop%20GotBarz-%20Problem%20%28Mixed%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Crumbs', 'file': 'https://www.dropbox.com/s/8uec1kpkksb7ek9/Klazzic%20-%20Crumbs.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Will Not Be Tamed', 'file': 'https://www.dropbox.com/s/egtuft4b2enwgwg/Klazzic%20x%20Psiren%20-%20You%20Dont%20Know%20%28Prod.%20By%20Mentra%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Neva Gonna', 'file': 'https://www.dropbox.com/s/200pc48kevae5yf/Klazzic%20feat.%20Si%20Lo%20-%20Emotion.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Have 4 You', 'file': 'https://www.dropbox.com/s/8sbe3q5myae4lr6/Klazzic%20-%20Have%204%20U%20%28Prod.%20by%20Syndrome%29.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Today', 'file': 'https://www.dropbox.com/s/31002h2yhsb9mtc/Klazzic-%20Get%20It.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Long Day', 'file': 'https://www.dropbox.com/s/y3trg5dwapwip02/Klazzic%20-%20Long%20Day.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'S.M.A.R.G', 'file': 'https://www.dropbox.com/s/w8g9vtyot9pdit7/Same%20Page%20-%20Klzzic%20ft.%20Mikey%20Diamond-Smith.mp3?dl=1'},
+                {'icon': iconImage, 'title': 'Bang', 'file': 'https://www.dropbox.com/s/9ait95gpmtjpt4d/Klazzic%20-%20Bang.mp3?dl=1'},
+                
+          ]
+        });
+    </script>
+  
+  
+
+  </body>
+</html>
